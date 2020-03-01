@@ -243,6 +243,11 @@ toggle/cypher/red,blue/10
 | Rotational  |
 | Minigun     |
 | Medpack     |
+| Revolver    |
+
+<aside class="notice">
+The reovler is a weapon with only 1 bullet but it is a one hit KO weapon. You can use this in conjuction with the resetammo modifier to create something like 'one in the chamber'.
+</aside>
 
 ## Modifiers
 
@@ -266,7 +271,6 @@ toggle/cypher/red,blue/10
 > Loading a battle royale game with crates
 
 ```V-Handle
-modifier/br
 modifier/crates
 modifier/ffa
 toggle/spider/red,blue
@@ -280,7 +284,7 @@ ac/maxlives/1
 modifier/penguin
 modifier/icemap
 modifier/gravityswitch
-toggle/firefly/red,blue
+toggle/sword/red,blue
 ac/walkspeed/64
 ac/health/200
 ```
@@ -324,6 +328,8 @@ All modifiers are unset after a map is ended.
 | GravitySwitch | Switches gravity after set intervals. See ac/gravityon ac/gravityoff ac/gravityondelay ac/gravityoffdelay                           |
 | IceMap        | Makes the map very slippery... (only works for brick maps)                                                                          |
 | Penguin       | Slide slide penguins! THIS IS A FUN/EXPERIMENTAL MODIFIER, HAVE NO EXPECTATIONS :)                                                  |
+| CircleOfDeath | A circle will a apear around the map that shrinks forcing players towards the middle                                                |
+| ResetAmmo     | Whenever you get a kill your ammo gets filled up again                                                                              |
 
 
 ## VIP
@@ -507,7 +513,11 @@ Use <code>ac/@config/@value</code> to set certain config values
 | gravityon       | The gravity when the gravity is 'on' in the gravityswitch modifier.                                                                                          | Positive number         | 196.2   | ac/gravityon/200                |
 | gravityoff      | The gravity when the gravity is 'off' in the gravityswitch modifier.                                                                                         | Positive number         | 16      | ac/gravityoff/50                |
 | gravityondelay  | The amount of time that the gravity is 'on' in the gravityswitch modifier.                                                                                   | Positive number         | 60      | ac/gravityondelay/20            |
-| gravityoffdelay | The amount of time that the gravity is 'off' in the gravityswitch modifier. 
-
+| gravityondelay  | The amount of time that the gravity is 'on' in the gravityswitch modifier.                                                                                   | Positive number         | 60      | ac/gravityondelay/20            |
+| gravityoffdelay | The amount of time that the gravity is 'off' in the gravityswitch modifier.                                                                                 | Positive number         | 10      | ac/gravityoffdelay/20           |
+| coddamage  | Amount of damage a player takes when outside the circle.                                                                                   | Positive number         | 10      | ac/coddamage/20            |
+| codedamagedelay  | Delay per size decrease of the circle and deals damage (in seconds).                                                                                   | Positive number         | 5      | ac/codedamagedelay/20            |
+| codstarttime  | Delay after how much time the circle starts shrinking (in seconds).                                                                                   | Positive number         | 120      | ac/codstarttime/20            |
+| codsize  | The circle is shrinked by this amount.                                                                                   | Positive number         | 1      | ac/codsize/20            |
 
 
