@@ -872,8 +872,7 @@ toggle/cypher/red,blue/10
 <blockquote>
 <p>Loading a battle royale game with crates</p>
 </blockquote>
-<pre class="highlight plaintext"><code>modifier/br
-modifier/crates
+<pre class="highlight plaintext"><code>modifier/crates
 modifier/ffa
 toggle/spider/red,blue
 ac/regencrates/true
@@ -885,7 +884,7 @@ ac/maxlives/1
 <pre class="highlight plaintext"><code>modifier/penguin
 modifier/icemap
 modifier/gravityswitch
-toggle/firefly/red,blue
+toggle/sword/red,blue
 ac/walkspeed/64
 ac/health/200
 </code></pre><h3 id='loading-modifiers'>Loading modifiers</h3>
@@ -998,6 +997,10 @@ All modifiers are unset after a map is ended.
 <tr>
 <td>Penguin</td>
 <td>Slide slide penguins! THIS IS A FUN/EXPERIMENTAL MODIFIER, HAVE NO EXPECTATIONS :)</td>
+</tr>
+<tr>
+<td>CircleOfDeath</td>
+<td>A circle will a apear around the map that shrinks forcing players towards the middle</td>
 </tr>
 </tbody></table>
 <h2 id='vip'>VIP</h2>
@@ -1283,11 +1286,46 @@ Use <code>templelockdown/false</code> to remove the lockdown from the temple</p>
 <td>ac/gravityondelay/20</td>
 </tr>
 <tr>
+<td>gravityondelay</td>
+<td>The amount of time that the gravity is &#39;on&#39; in the gravityswitch modifier.</td>
+<td>Positive number</td>
+<td>60</td>
+<td>ac/gravityondelay/20</td>
+</tr>
+<tr>
 <td>gravityoffdelay</td>
 <td>The amount of time that the gravity is &#39;off&#39; in the gravityswitch modifier.</td>
-<td></td>
-<td></td>
-<td></td>
+<td>Positive number</td>
+<td>10</td>
+<td>ac/gravityoffdelay/20</td>
+</tr>
+<tr>
+<td>coddamage</td>
+<td>Amount of damage a player takes when outside the circle.</td>
+<td>Positive number</td>
+<td>10</td>
+<td>ac/coddamage/20</td>
+</tr>
+<tr>
+<td>codedamagedelay</td>
+<td>Delay per size decrease of the circle and deals damage (in seconds).</td>
+<td>Positive number</td>
+<td>5</td>
+<td>ac/codedamagedelay/20</td>
+</tr>
+<tr>
+<td>codstarttime</td>
+<td>Delay after how much time the circle starts shrinking (in seconds).</td>
+<td>Positive number</td>
+<td>120</td>
+<td>ac/codstarttime/20</td>
+</tr>
+<tr>
+<td>codsize</td>
+<td>The circle is shrinked by this amount.</td>
+<td>Positive number</td>
+<td>1</td>
+<td>ac/codsize/20</td>
 </tr>
 </tbody></table>
 
