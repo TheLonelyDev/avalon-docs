@@ -68,15 +68,69 @@ Trainers can still set people who are AFK to a specfic team when using <code>set
 </aside>
 
 
+# Trainer Commands
+
 ## Macro
 
+Macros or presets are sets of commands which can be executed and saved by anyone. This makes it easier to prepare events and share unique configurations with others! There are also a set of preset game rounds available for trainers to use and explorer.
+
 ### Run macro
+> Run macro named "test":
+
+```V-Handle
+runmacro/test
+```
+
+A macro or preset can be run by using <code>runmacro/name</code>.
+
 ### Starting macro capture
+> Start recording:
+
+```V-Handle
+recordmacro/
+```
+
+A macro or preset can recorded by using <code>record/macro</code>.
+
+
 ### Saving macro capture
+> Save current macro recording:
+
+```V-Handle
+savemacro/
+```
+
+A macro or preset can saved using <code>savemacro/</code>. The macro will be saved under a "random" name that consists out of 4 randomly combined words.
+
 ### Discard macro capture
+> Stop/discard macro recording
+
+```V-Handle
+disacrdmacro/
+```
+
+A macro or preset recording can be stopped by using <code>disacrdmacro/</code>.
 
 
-# Trainer Commands
+### List of preset macros
+
+You can find a list of preset macros below, more can be found at https://github.com/Avalon-Macro-Service/macro-repo
+
+| Macro name             | Description                                                                                                                                                                                                                        | How to run                      | Command example                                                                       |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|---------------------------------------------------------------------------------------|
+| 11lives_pitgrounds     | Pitgrounds 11 lives Cypher & Service                                                                                                                                                                                               | runmacro/11lives_pitgrounds     | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/11lives_pitgrounds     |
+| br                     | Battle Royale 1 live Sword & Service FFA                                                                                                                                                                                           | runmacro/br                     | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/br                     |
+| ctf_maze               | Maze CTF 11 lives Swords 3 captures to win Doppleganger modifier                                                                                                                                                                   | runmacro/ctf_maze               | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/ctf_maze               |
+| ctf_temple             | Temple CTF 11 lives Silenced, Zero, Sword 3 captures to win                                                                                                                                                                        | runmacro/ctf_temple             | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/ctf_temple             |
+| dom_bastion            | Bastion DOM Firefly, Type_15 11 lives 500 points to win                                                                                                                                                                            | runmacro/dom_bastion            | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/dom_bastion            |
+| dragonshout_skyfactory | Skyfactory Dragonshout 7 lives Gravityswitch modifier                                                                                                                                                                              | runmacro/dragonshout_skyfactory | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/dragonshout_skyfactory |
+| gungame_catwalks       | Catwalks Infinite lives First player to 25 kills wins Gungame, a new weapon every 2 kills Designation -> Replication -> Saw -> RSE -> Sub4S -> Silenced -> Cypher -> Type_15 -> Zero -> Rotational -> Sword -> Minigun -> Revolver | runmacro/gungame_catwalks       | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/gungame_catwalks       |
+| koth_narrow            | Narrow KOTH Zero, Sub4S 11 lives 240 points to win                                                                                                                                                                                 | runmacro/koth_narrow            | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/koth_narrow            |
+| koth_stonebrick        | Stonebrick KOTH Swords 11 lives                                                                                                                                                                                                    | runmacro/koth_stonebrick        | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/koth_stonebrick        |
+| oneinthechamber_crown  | Crown Sword, Revolver Infinite lives First player to 20 kills wins ResetAmmo modifier                                                                                                                                              | runmacro/oneinthechamber_crown  | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/oneinthechamber_crown  |
+| tdm_meadows            | Meadows TDM Sword Infinite lives 80 points to win                                                                                                                                                                                  | runmacro/tdm_meadows            | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/swords_meadows         |
+| tdm_bricktops          | Bricktops TDM Replication, Service Infinite lives 80 points to win                                                                                                                                                                 | runmacro/tdm_bricktops          | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/tdm_bricktops          |
+| vip_trains             | Trains Assasinate/VIP Replication, AT96, Spider 11 lives Please mark the VIP for each team with VIP/player                                                                                                                         | runmacro/vip_trains             | https://github.com/Avalon-Macro-Service/macro-repo/blob/master/vip_trains 
 
 ## Maps
 
@@ -246,7 +300,7 @@ toggle/cypher/red,blue/10
 | Revolver    |
 
 <aside class="notice">
-The reovler is a weapon with only 1 bullet but it is a one hit KO weapon. You can use this in conjuction with the resetammo modifier to create something like 'one in the chamber'.
+The revolver is a weapon with only 1 bullet but it is a one hit KO weapon. You can use this in conjuction with the resetammo modifier to create something like 'one in the chamber'.
 </aside>
 
 ## Modifiers
