@@ -106,11 +106,36 @@ A macro or preset can saved using <code>savemacro/</code>. The macro will be sav
 > Stop/discard macro recording
 
 ```V-Handle
-disacrdmacro/
+disacardmacro/
 ```
 
 A macro or preset recording can be stopped by using <code>disacrdmacro/</code>.
 
+
+### Examples on how to use
+> Record a macro to load bricktops with a replication where stats are reset and people are teamed & respawned:
+
+```V-Handle
+recordmacro/
+load/bricktops
+toggle/replication/*
+bal/*
+rs/*
+respawn/*
+savemacro/
+```
+
+> Record a macro to load bastion with a service where stats are reset and people are teamed & respawned:
+
+```V-Handle
+recordmacro/
+load/bastion
+toggle/service/*
+bal/*
+rs/*
+respawn/*
+savemacro/
+```
 
 ### List of preset macros
 
