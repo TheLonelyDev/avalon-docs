@@ -113,7 +113,7 @@ A macro or preset can saved using <code>savemacro/</code>. The macro will be sav
 
 ### Discard macro capture
 
-A macro or preset recording can be stopped by using <code>disacrdmacro/</code>.
+A macro or preset recording can be stopped by using <code>discardmacro/</code>.
 
 
 ### List of preset macros
