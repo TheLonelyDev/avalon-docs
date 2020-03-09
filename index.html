@@ -230,14 +230,14 @@
                   <li>
                     <a href="#afk" class="toc-h2 toc-link" data-title="AFK">AFK</a>
                   </li>
-                  <li>
-                    <a href="#macro" class="toc-h2 toc-link" data-title="Macro">Macro</a>
-                  </li>
               </ul>
           </li>
           <li>
             <a href="#trainer-commands" class="toc-h1 toc-link" data-title="Trainer Commands">Trainer Commands</a>
               <ul class="toc-list-h2">
+                  <li>
+                    <a href="#macro" class="toc-h2 toc-link" data-title="Macro">Macro</a>
+                  </li>
                   <li>
                     <a href="#maps" class="toc-h2 toc-link" data-title="Maps">Maps</a>
                   </li>
@@ -320,7 +320,127 @@ Make sure to mark yourself as back using <code>back/</code>.
 <aside class="notice">
 Trainers can still set people who are AFK to a specfic team when using <code>set/player/team</code>. This only prevents you from being teamed when the trainer uses <code>balance/</code>.
 </aside>
-<h2 id='macro'>Macro</h2><h3 id='run-macro'>Run macro</h3><h3 id='starting-macro-capture'>Starting macro capture</h3><h3 id='saving-macro-capture'>Saving macro capture</h3><h3 id='discard-macro-capture'>Discard macro capture</h3><h1 id='trainer-commands'>Trainer Commands</h1><h2 id='maps'>Maps</h2><h3 id='arena'>Arena</h3>
+<h1 id='trainer-commands'>Trainer Commands</h1><h2 id='macro'>Macro</h2>
+<p>Macros or presets are sets of commands which can be executed and saved by anyone. This makes it easier to prepare events and share unique configurations with others! There are also a set of preset game rounds available for trainers to use and explorer.</p>
+<h3 id='run-macro'>Run macro</h3>
+<blockquote>
+<p>Run macro named &quot;test&quot;:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>runmacro/test
+</code></pre>
+<p>A macro or preset can be run by using <code>runmacro/name</code>.</p>
+<h3 id='starting-macro-capture'>Starting macro capture</h3>
+<blockquote>
+<p>Start recording:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>recordmacro/
+</code></pre>
+<p>A macro or preset can recorded by using <code>record/macro</code>.</p>
+<h3 id='saving-macro-capture'>Saving macro capture</h3>
+<blockquote>
+<p>Save current macro recording:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>savemacro/
+</code></pre>
+<p>A macro or preset can saved using <code>savemacro/</code>. The macro will be saved under a &quot;random&quot; name that consists out of 4 randomly combined words.</p>
+<h3 id='discard-macro-capture'>Discard macro capture</h3>
+<blockquote>
+<p>Stop/discard macro recording</p>
+</blockquote>
+<pre class="highlight plaintext"><code>disacrdmacro/
+</code></pre>
+<p>A macro or preset recording can be stopped by using <code>disacrdmacro/</code>.</p>
+<h3 id='list-of-preset-macros'>List of preset macros</h3>
+<p>You can find a list of preset macros below, more can be found at https://github.com/Avalon-Macro-Service/macro-repo</p>
+
+<table><thead>
+<tr>
+<th>Macro name</th>
+<th>Description</th>
+<th>How to run</th>
+<th>Command example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>11lives_pitgrounds</td>
+<td>Pitgrounds 11 lives Cypher &amp; Service</td>
+<td>runmacro/11lives_pitgrounds</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/11lives_pitgrounds</td>
+</tr>
+<tr>
+<td>br</td>
+<td>Battle Royale 1 live Sword &amp; Service FFA</td>
+<td>runmacro/br</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/br</td>
+</tr>
+<tr>
+<td>ctf_maze</td>
+<td>Maze CTF 11 lives Swords 3 captures to win Doppleganger modifier</td>
+<td>runmacro/ctf_maze</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/ctf_maze</td>
+</tr>
+<tr>
+<td>ctf_temple</td>
+<td>Temple CTF 11 lives Silenced, Zero, Sword 3 captures to win</td>
+<td>runmacro/ctf_temple</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/ctf_temple</td>
+</tr>
+<tr>
+<td>dom_bastion</td>
+<td>Bastion DOM Firefly, Type_15 11 lives 500 points to win</td>
+<td>runmacro/dom_bastion</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/dom_bastion</td>
+</tr>
+<tr>
+<td>dragonshout_skyfactory</td>
+<td>Skyfactory Dragonshout 7 lives Gravityswitch modifier</td>
+<td>runmacro/dragonshout_skyfactory</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/dragonshout_skyfactory</td>
+</tr>
+<tr>
+<td>gungame_catwalks</td>
+<td>Catwalks Infinite lives First player to 25 kills wins Gungame, a new weapon every 2 kills Designation -&gt; Replication -&gt; Saw -&gt; RSE -&gt; Sub4S -&gt; Silenced -&gt; Cypher -&gt; Type_15 -&gt; Zero -&gt; Rotational -&gt; Sword -&gt; Minigun -&gt; Revolver</td>
+<td>runmacro/gungame_catwalks</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/gungame_catwalks</td>
+</tr>
+<tr>
+<td>koth_narrow</td>
+<td>Narrow KOTH Zero, Sub4S 11 lives 240 points to win</td>
+<td>runmacro/koth_narrow</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/koth_narrow</td>
+</tr>
+<tr>
+<td>koth_stonebrick</td>
+<td>Stonebrick KOTH Swords 11 lives</td>
+<td>runmacro/koth_stonebrick</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/koth_stonebrick</td>
+</tr>
+<tr>
+<td>oneinthechamber_crown</td>
+<td>Crown Sword, Revolver Infinite lives First player to 20 kills wins ResetAmmo modifier</td>
+<td>runmacro/oneinthechamber_crown</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/oneinthechamber_crown</td>
+</tr>
+<tr>
+<td>tdm_meadows</td>
+<td>Meadows TDM Sword Infinite lives 80 points to win</td>
+<td>runmacro/tdm_meadows</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/swords_meadows</td>
+</tr>
+<tr>
+<td>tdm_bricktops</td>
+<td>Bricktops TDM Replication, Service Infinite lives 80 points to win</td>
+<td>runmacro/tdm_bricktops</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/tdm_bricktops</td>
+</tr>
+<tr>
+<td>vip_trains</td>
+<td>Trains Assasinate/VIP Replication, AT96, Spider 11 lives Please mark the VIP for each team with VIP/player</td>
+<td>runmacro/vip_trains</td>
+<td>https://github.com/Avalon-Macro-Service/macro-repo/blob/master/vip_trains</td>
+</tr>
+</tbody></table>
+<h2 id='maps'>Maps</h2><h3 id='arena'>Arena</h3>
 <blockquote>
 <p>Load arena:</p>
 </blockquote>
@@ -858,7 +978,7 @@ toggle/cypher/red,blue/10
 </tbody></table>
 
 <aside class="notice">
-The reovler is a weapon with only 1 bullet but it is a one hit KO weapon. You can use this in conjuction with the resetammo modifier to create something like 'one in the chamber'.
+The revolver is a weapon with only 1 bullet but it is a one hit KO weapon. You can use this in conjuction with the resetammo modifier to create something like 'one in the chamber'.
 </aside>
 <h2 id='modifiers'>Modifiers</h2>
 <blockquote>
