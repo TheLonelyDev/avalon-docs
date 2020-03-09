@@ -347,10 +347,32 @@ Trainers can still set people who are AFK to a specfic team when using <code>set
 <blockquote>
 <p>Stop/discard macro recording</p>
 </blockquote>
-<pre class="highlight plaintext"><code>disacrdmacro/
+<pre class="highlight plaintext"><code>disacardmacro/
 </code></pre>
 <p>A macro or preset recording can be stopped by using <code>disacrdmacro/</code>.</p>
-<h3 id='list-of-preset-macros'>List of preset macros</h3>
+<h3 id='examples-on-how-to-use'>Examples on how to use</h3>
+<blockquote>
+<p>Record a macro to load bricktops with a replication where stats are reset and people are teamed &amp; respawned:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>recordmacro/
+load/bricktops
+toggle/replication/*
+bal/*
+rs/*
+respawn/*
+savemacro/
+</code></pre>
+<blockquote>
+<p>Record a macro to load bastion with a service where stats are reset and people are teamed &amp; respawned:</p>
+</blockquote>
+<pre class="highlight plaintext"><code>recordmacro/
+load/bastion
+toggle/service/*
+bal/*
+rs/*
+respawn/*
+savemacro/
+</code></pre><h3 id='list-of-preset-macros'>List of preset macros</h3>
 <p>You can find a list of preset macros below, more can be found at https://github.com/Avalon-Macro-Service/macro-repo</p>
 
 <table><thead>
