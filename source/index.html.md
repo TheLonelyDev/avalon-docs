@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Avalon Guide
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - V-Handle
