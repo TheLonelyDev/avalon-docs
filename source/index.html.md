@@ -72,47 +72,6 @@ Trainers can still set people who are AFK to a specfic team when using <code>set
 
 ## Macro
 
-Macros or presets are sets of commands which can be executed and saved by anyone. This makes it easier to prepare events and share unique configurations with others! There are also a set of preset game rounds available for trainers to use and explorer.
-
-### Run macro
-> Run macro named "test":
-
-```V-Handle
-runmacro/test
-```
-
-A macro or preset can be run by using <code>runmacro/name</code>.
-
-### Starting macro capture
-> Start recording:
-
-```V-Handle
-recordmacro/
-```
-
-A macro or preset can recorded by using <code>record/macro</code>.
-
-
-### Saving macro capture
-> Save current macro recording:
-
-```V-Handle
-savemacro/
-```
-
-A macro or preset can saved using <code>savemacro/</code>. The macro will be saved under a "random" name that consists out of 4 randomly combined words.
-
-### Discard macro capture
-> Stop/discard macro recording
-
-```V-Handle
-disacardmacro/
-```
-
-A macro or preset recording can be stopped by using <code>disacrdmacro/</code>.
-
-
-### Examples on how to use
 > Record a macro to load bricktops with a replication where stats are reset and people are teamed & respawned:
 
 ```V-Handle
@@ -136,6 +95,26 @@ rs/*
 respawn/*
 savemacro/
 ```
+
+Macros or presets are sets of commands which can be executed and saved by anyone. This makes it easier to prepare events and share unique configurations with others! There are also a set of preset game rounds available for trainers to use and explorer.
+
+### Run macro
+
+A macro or preset can be run by using <code>runmacro/name</code>.
+
+### Starting macro capture
+
+A macro or preset can recorded by using <code>recordmacro/</code>.
+
+
+### Saving macro capture
+
+A macro or preset can saved using <code>savemacro/</code>. The macro will be saved under a "random" name that consists out of 4 randomly combined words.
+
+### Discard macro capture
+
+A macro or preset recording can be stopped by using <code>disacrdmacro/</code>.
+
 
 ### List of preset macros
 
