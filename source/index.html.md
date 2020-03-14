@@ -419,7 +419,10 @@ All modifiers are unset after a map is ended.
 | Penguin       | Slide slide penguins! THIS IS A FUN/EXPERIMENTAL MODIFIER, HAVE NO EXPECTATIONS :)                                                  |
 | CircleOfDeath | A circle will a apear around the map that shrinks forcing players towards the middle                                                |
 | ResetAmmo     | Whenever you get a kill your ammo gets filled up again                                                                              |
-
+| ResetHealth     | This gamemode heals someone by a configurable percentage (default= 100%) when they get a KO                                                                              |
+| HealthSteal     | This gamemode heals someone by a configurable percentage (default= 50%) when they dealt damage to someone                                                                              |
+| SpeedSapper     | WThis gamemode slows someone down by a configurable per-mille (default= 5‰) when they dealt damage to someone                                                                              |
+| Wounded     | This gamemode slows someone down by a configurable per-mille (default= 5‰) when they lost health                                                                              |
 
 ## VIP
 Use <code>vip/</code> to mark or unmark a VIP target
